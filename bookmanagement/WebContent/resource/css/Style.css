@@ -1,0 +1,322 @@
+@charset "ISO-8859-1";
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	border: 1px solid #cccccc;
+	box-shadow: 0 0 5px #DDDDDD;
+}
+    
+body {
+	font-family: courier;
+	position: relative;
+}
+
+.register {
+	width: 350px;
+	background-color: #FFFFFF;
+	margin: 0px auto;
+	margin-top: 70px;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
+
+.login {
+	width: 350px;
+	background-color: #FFFFFF;
+	margin: 0px auto;
+	margin-top: 70px;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	overflow: auto;
+	padding-bottom: 20px;
+}
+
+.sign {
+	color: #337AB7;
+	text-decoration: none;
+}
+
+.sign:hover {
+	opacity: 0.7;
+}
+
+.form-label {
+	float: left;
+	margin: 10px 0 0 7%;
+	font-weight: normal;
+	text-shadow: 1px 1px #DDDDDD;
+}
+
+.form-input {
+	width: 86%;
+	height: 25px;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	margin: 2px 0;
+	font-family: courier;
+	font-size: 16px;
+}
+
+.form-submit {
+	border: 1px solid #337AB7;
+	border-radius: 6px;
+	background-color: #337AB7;
+	width: 180px;
+	height: 30px;
+	margin: 20px 0 0 0;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.form-submit:hover {
+	opacity: 0.7;
+}
+
+#forgotpassword {
+	text-align: left;
+	margin: 0 0 0 7%;
+}
+
+#forgotpassword a {
+	text-decoration: none; color: #338FD0;
+}
+
+#or:before {
+    position: relative;
+    content: "";
+    display: block;
+    width: 86%;
+    height: 1px;
+    margin: auto;
+    background: #DDDDDD;
+    top: 9px;
+}
+
+#or i {
+    background: #fff;
+    z-index: 9;
+    padding: 5px;
+    position: relative;
+}
+
+#or {
+	margin-bottom: 20px;
+	color: #767676;
+}
+
+/* Style all font awesome icons */
+.fa {
+	padding: 15px;
+	font-size: 30px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Hover effect */
+.login .fa:hover {
+	opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+/* Google */
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#menu {
+	width: 960px;
+	height: 40px;
+	background-color: #0067B8;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); /*Đổ bóng cho menu*/
+	position: fixed; /* Cho menu cố định 1 vị trí với top */
+	top: 0; /* Nằm trên cùng */
+	z-index: 9;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#menu ul li {
+	width: auto;
+	/* display: inline-block; /* Hiển thị list theo hàng ngang, có thể dùng float: left */
+	float: left; /* Sử dụng float left mới có thể thêm user ở bên phải menu được */
+	line-height: 40px;
+	color: #fff;
+	position: relative; /* .sub-menu phải nằm gần menu mẹ */
+}
+
+#menu ul li a {
+	white-space: nowrap;
+	padding: 0 10px;
+	color: #fff;
+	text-decoration: none;
+	display: block; /* đưa kiểu hiển thị cho các thẻ này thành block để nó được phủ kín cái #menu ul */
+}
+
+#menu li a:hover {
+	background: #f2f2f2;
+	color: #333;
+}
+
+/*CSS Style cho Submenu*/
+/* .sub-menu {
+	display: none;
+	position: absolute;
+}
+
+.sub-menu li {
+	display: block;
+	background-color: #0067B8;
+}
+
+.sub-menu li a {
+	width: 150px;
+}
+
+#menu li:hover .sub-menu {
+	display: block;
+} */
+
+/* Add a color to the active/current link */
+#menu a.active {
+	background-color: #003D6B;
+	color: white;
+}
+
+#menu a.active:hover {
+	background: #f2f2f2;
+	color: #333;
+}
+
+#user {
+	color: #ffffff;
+	float: right;
+	line-height: 40px;
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+#search-btn {
+	float: right;
+}
+
+.fasearch {
+	padding: 11px;
+}
+.fa-search {
+	background: #0067B8;
+	color: white;
+}
+
+#content {
+	margin-top: 36px;
+	overflow: auto;
+}
+
+#leftside {
+	width: 474px;
+	border: 1px solid #DDDDDD;
+	margin: 2px 2px;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#rightside {
+	width: 474px;
+	height: 543px;
+	border: 1px solid #DDDDDD;
+	margin: 2px 2px;
+	float: left;
+	text-align: center;
+}
+
+.form-textarea {
+	margin-top: 30px;
+	border: 1px solid #DDDDDD;
+}
+
+.product {
+	width: 314px;
+	height: 500px;
+	border: 1px solid #DDDDDD;
+	margin: 2px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.product-img {
+	height: 200px;
+	margin-top: 20px;
+}
+
+.product-img:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.book-name {
+	text-align: left;
+	margin: 10px 20px 2px 20px;
+}
+
+.book-detail {
+	text-align: left;
+	margin: 2px 20px 2px 20px;
+}
+
+.book-description {
+	text-align: left;
+	margin: 2px 20px 2px 20px;
+	color: #767676;
+}
+
+#search-bar {
+	text-align: center;
+	margin-bottom: 40px;
+}
+#search-bar .form-input {
+	width: 50%;
+	height: 25px;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	margin: 2px 0;
+	font-family: courier;
+	font-size: 16px;
+}
+
+#search-bar .form-submit {
+	border: 1px solid #337AB7;
+	border-radius: 6px;
+	background-color: #337AB7;
+	width: auto;
+	height: 28px;
+	margin: 20px 0 0 0;
+	font-weight: normal;
+	color: #ffffff;
+}
